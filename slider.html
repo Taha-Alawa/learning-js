@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=], initial-scale=1.0">
+  <title>slider</title>
+  <link rel="stylesheet" href="/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>learn js</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 
+    ضروري تكتب 
+    defer
+     مشان مايخرب الكود معك 
+  -->
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/more.js"></script>
+</head>
+<body id="body">
+  <header id="headerr" class="headerr">
+    <h1 id="firstH1" style="background: transparent;"></h1>
+    <nav>
+      <ul class="parent">
+        <li><a href="/index.html">home</a></li>
+        <li id="change-color" class="mode">change mode</li>
+        <li id="hover">Change Color
+          <ul id="hiddenUl" style="display: none;">
+            <li id="headerbg">Header BG</li>
+            <li id="titlebg">Title BG</li>
+            <li id="titlecolor">Title Color</li>
+            <li id="sectionbg">Section BG</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h1>slider</h1>
+        <div id="sliderContainer" class="slider-container">
+        </div>
+        <div class="main-buttons">
+          <button id="pre">&lt; pre</button>
+          <div class="num-buttons">
+            <button class="btnNum active-num">1</button>
+            <button class="btnNum">2</button>
+            <button class="btnNum">3</button>
+            <button class="btnNum">4</button>
+            <button class="btnNum">5</button>
+          </div>
+            <button id="next">next &gt;</button>
+        </div>
+    </section>
+
+    <section>
+      <h1>toggle tabs</h1>
+      <div id="alltabs" class="alltabs">
+        <button class="country active-country">Finland</button>
+        <button class="country">Denmark</button>
+        <button class="country">Switzerland</button>
+      </div>
+
+      <div id="parent-of-facts" class="parent-of-facts">
+        <article class="facts active-facts">
+          <h2>4 Facts About Finland</h2>
+          <ol>
+            <li>Finland is the world's happiest country</li>
+            <li>Finns are the World's biggest coffee drinkers</li>
+            <li>There are 187,888 lakes in Finland</li>
+            <li>Most Finnish children have two birthday parties</li>
+          </ol>
+        </article>
+        <article class="facts">
+          <h2>3 Facts About Denmark</h2>
+          <ol>
+            <li>Denmark is the second happiest country in the world</li>
+            <li>Denmark has 444 islands</li>
+            <li>Denmark has The oldest flag in the world</li>
+          </ol>
+        </article>
+        <article class="facts">
+          <h2>5 Facts About Switzerland</h2>
+          <ol>
+            <li>Switzerland is the third happiest country in the world</li>
+            <li>They Make & Eat a lot of Chocolate</li>
+            <li>Switzerland Has 7000 Lakes</li>
+            <li>25% of the Population is Foreign</li>
+            <li>One of the Most Expensive Places to Live in</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online store</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- 
+    ضروري تكتب 
+    defer
+     مشان مايخرب الكود معك 
+  -->
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/store.js"></script>
+</head>
+<body id="body">
+  <header id="headerr" class="headerr">
+    <h1 id="firstH1" style="background: transparent;"></h1>
+    <nav>
+      <ul class="parent">
+        <li><a href="index.html">home</a></li>
+        <li id="change-color" class="mode">change mode</li>
+        <li id="hover">Change Color
+          <ul id="hiddenUl" style="display: none;">
+            <li id="headerbg">Header BG</li>
+            <li id="titlebg">Title BG</li>
+            <li id="titlecolor">Title Color</li>
+            <li id="sectionbg">Section BG</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>My Online Store</h1>
+
+    <div class="parent-product">
+      <div class="card" style="width: 18rem;">
+        <img src="/t shirt img/T-shirt1.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Black T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="flex-buy-price">
+            <button class="buyButoons btn btn-primary">Buy</button>
+            <span class="price">$10</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/t shirt img/T-shirt2.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Red T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="flex-buy-price">
+            <button class="buyButoons btn btn-primary">Buy</button>
+            <span class="price">$9</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/t shirt img/T-shirt3.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Nike T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="flex-buy-price">
+            <button class="buyButoons btn btn-primary">Buy</button>
+            <span class="price">$15</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/t shirt img/T-shirt4.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Blue T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="flex-buy-price">
+            <button class="buyButoons btn btn-primary">Buy</button>
+            <span class="price">$20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="black-screen">
+      <div id="closeBlackScreen">
+        <span>&#10006</span>
+      </div>
+      <div class="product-perant"></div>
+
+      <article class="total-price-done">
+        <p class="total-price">Total price</p>
+        <p class="total-price" id="totalPrice">$0</p>
+        <button id="thnfed" class="btn btn-danger">تنفيذ عملية الشراء</button>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
